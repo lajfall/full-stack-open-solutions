@@ -1,0 +1,55 @@
+
+GET http://localhost:3001/api/persons
+
+###
+
+# valid post request
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+  "name": "Richard",
+  "number": "01-23456"
+}
+
+###
+
+# missing name
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+  "number": "8964"
+}
+
+###
+
+# missing number
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+  "name": "Richard"
+}
+
+###
+
+# name too short
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+  "name": "R",
+  "number": "01-23456"
+}
+
+###
+
+# invalid number
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+  "name": "Chen",
+  "number": "0123456"
+}

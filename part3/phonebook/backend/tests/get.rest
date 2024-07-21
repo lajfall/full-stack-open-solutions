@@ -1,0 +1,17 @@
+
+GET http://localhost:3001/info
+
+###
+
+# GET all persons
+GET http://localhost:3001/api/persons
+
+###
+
+# GET a person that exists
+GET http://localhost:3001/api/persons/668e03d7a4d2b58cf80fefc7
+
+###
+
+# GET person that does not exist
+GET http://localhost:3001/api/persons/invalid_id

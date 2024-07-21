@@ -1,0 +1,12 @@
+
+GET http://localhost:3001/api/persons
+
+###
+
+# DELETE a person that exists
+DELETE http://localhost:3001/api/persons/668f3b160c4271592850c630
+
+###
+
+# DELETE a person that does not exist
+DELETE http://localhost:3001/api/persons/invalid_id

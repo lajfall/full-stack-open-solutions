@@ -1,0 +1,20 @@
+
+GET http://localhost:3003/api/blogs
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2NjkyOTAwNmY0N2Q2OWY3ZTg4ODZhMDciLCJpYXQiOjE3MjA4ODMwNzh9.rSQUDGeH9lgPQtp6lUbrMpuaFTGILvx1Z3xEP35YyXU
+
+{
+  "title": "blog by admin",
+  "author": "admin",
+  "url": "url",
+  "likes": 10
+}
+
+###
+
+DELETE http://localhost:3003/api/blogs/6692bd2bcb728c55bdf29363
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2NjkyOTAwNmY0N2Q2OWY3ZTg4ODZhMDciLCJpYXQiOjE3MjA4ODMwNzh9.rSQUDGeH9lgPQtp6lUbrMpuaFTGILvx1Z3xEP35YyXU
